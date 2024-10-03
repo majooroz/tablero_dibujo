@@ -23,8 +23,8 @@ canvas_result = st_canvas(
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
-    height=400,  # Altura aumentada para mejor visualización
-    width=600,   # Ancho ajustado para un tablero más amplio
+    height=300,  # Altura aumentada para mejor visualización
+    width=500,   # Ancho ajustado para un tablero más amplio
     drawing_mode=drawing_mode,
     key="canvas",
 )
