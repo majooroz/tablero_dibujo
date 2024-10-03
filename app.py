@@ -64,13 +64,11 @@ analyze_button = st.button("Analiza la imagen", type="secondary")
 if canvas_result.image_data is not None and api_key and analyze_button:
 
     with st.spinner("Analizando ..."):
-        # Convertir la imagen del canvas en array y guardarla como PNG
-        input_numpy_array = np.array(canvas_result.image_data)
-        input_image = Image.fromarray(input_numpy_array.astype('uint8'), 'RGBA')
-        input_image.save('img.png')
+        # Usar la imagen 'flores.jpg' en lugar de guardar la imagen del canvas
+        input_image = Image.open("flores.jpg")  # Asegúrate de que 'flores.jpg' esté en el directorio correcto
         
         # Codificar la imagen en base64
-        base64_image = encode_image_to_base64("img.png")
+        base64_image = encode_image_to_base64("flores.jpg")
         
         prompt_text = "Describe en español la imagen brevemente"
         
@@ -112,5 +110,6 @@ else:
     # Advertencias si falta la clave o la imagen
     if not api_key:
         st.warning("Por favor ingresa tu API key.")
+
 
 
