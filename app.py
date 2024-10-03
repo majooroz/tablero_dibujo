@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 # Título principal con estilo
