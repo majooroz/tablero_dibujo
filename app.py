@@ -28,7 +28,7 @@ def encode_image_to_base64(image_path):
 st.set_page_config(page_title='<h1 style='text-align: center;'>🎨 Tablero de Dibujo Interactivo 🖌️</h1>", unsafe_allow_html=True  ')
 st.title('Tablero Inteligente')
 with st.sidebar:
-    st.subheader("<h2 style='color: #00FF00;'>🔧 Propiedades del Tablero</h2>", unsafe_allow_html=True")
+    st.subheader("<h2 style='>🔧 Propiedades del Tablero</h2>", unsafe_allow_html=True")
     st.subheader("En esta aplicación veremos la capacidad que ahora tiene una máquina de interpretar un boceto")
 st.subheader("Dibuja el boceto en el panel  y presiona el botón para analizarla")
 
