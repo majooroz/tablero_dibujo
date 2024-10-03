@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
+from PIL import Image
 
 # Título principal con estilo
 st.markdown("<h1 style='text-align: center; color: #FFA500;'>🎨 Tablero de Dibujo Interactivo 🖌️</h1>", unsafe_allow_html=True)
