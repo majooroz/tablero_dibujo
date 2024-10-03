@@ -25,10 +25,10 @@ def encode_image_to_base64(image_path):
 
 
 # Streamlit 
-#st.set_page_config(page_title='<h1 style='text-align: center;'>🎨 Tablero de Dibujo Interactivo 🖌️</h1>", unsafe_allow_html=True  ')
+st.set_page_config(page_title='Tablero Inteligente')
 st.title('Tablero Inteligente')
 with st.sidebar:
-    #st.subheader("<h2 style='>🔧 Propiedades del Tablero</h2>", unsafe_allow_html=True")
+    st.subheader("Acerca de:")
     st.subheader("En esta aplicación veremos la capacidad que ahora tiene una máquina de interpretar un boceto")
 st.subheader("Dibuja el boceto en el panel  y presiona el botón para analizarla")
 
@@ -39,13 +39,10 @@ drawing_mode = "freedraw"
 stroke_width = st.sidebar.slider('Selecciona el ancho de línea', 1, 30, 5)
 #stroke_color = '#FFFFFF' # Set background color to white
 #bg_color = '#000000'
-stroke_color = st.color_picker("Color de Trazo", "#000000")
+stroke_color = "#000000" 
 bg_color = '#FFFFFF'
 #realtime_update = st.sidebar.checkbox("Update in realtime", True)
-drawing_mode = st.sidebar.selectbox(
-    "Herramienta de dibujo:",
-    ("freedraw", "line", "rect", "circle", "transform", "polygon", "point"),
-  )
+
 
 # Create a canvas component
 canvas_result = st_canvas(
@@ -142,6 +139,5 @@ else:
 
     if not api_key:
         st.warning("Por favor ingresa tu API key.")
-
 
 
