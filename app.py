@@ -35,4 +35,4 @@ st.markdown("<footer style='text-align: center; color: #888;'>Crea algo increíb
 image = Image.open("flores.jpg")
 st.image(image,caption = "flores")
 texto = st.text_input("Tienes 20 años y no has conseguido mejorar tu arte, pues que lastima yo tampoco, qui te dejo una guia para dibujar mejor :)")
-st.write("El texto escrito es", texto)
+
